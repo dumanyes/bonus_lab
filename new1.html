@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .shapka{
+            background-color: #0B3581;
+            width: 100vw;
+            height: 20px;
+            position: fixed;
+        }
+        .header{
+            color: white;
+            display: flex;
+            background-color:#E48A1E;
+            width: 100vw;
+            min-height: 400px;
+            font-family: 'Rubik', sans-serif;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Rubik', sans-serif;
+        }
+        .nb{
+        position:sticky;
+        top: 0;
+        background-color: #0B3581;
+        color:white;
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .gr{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .inf{
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+        }
+        .cent{
+            display: grid;
+            justify-content: center;
+        }
+        .pl{
+            color: #FFF;
+            border: 3px solid #0B3581;
+            background-color: #0B3581;
+            border-radius: 20px;
+            width: 70vw;
+            height: 200px;
+            align-items: center;
+            font-family: 'Rubik', sans-serif;
+        }
+        .hcourse{
+            max-width: max-content;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-left: 80px;
+            font-family: 'Rubik', sans-serif;
+        }
+        .re{
+            border: 3px solid #f5f5f7;;
+            background-color: #f5f5f7;;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        .wrapper{
+            display: grid;
+            max-width: 100%;
+            min-width: 1%;
+            height: 100%;
+            grid-template-columns:minmax(1fr 1fr)  ;
+        }
+        img{
+            width: 13vh;
+            height: 13vh;
+        }
+        .cont{
+            width: 100%;
+        }
+
+        .faq{
+            max-width: 1000px;
+            height: 300px;
+            margin: 20px auto;
+        }
+        .faq-item{
+            margin-bottom: 5px;
+            border: 1px solid #0B3581;
+            
+        }
+        .faq-title{
+            padding: 10px, 35px;
+            display: block;
+            cursor: pointer;
+            transition:ease-out 1s;
+        }
+        .faq-title:hover{
+            background-color: #F1B771;
+        }
+        .faq-text{
+            display: none;
+            font-size: 14px;
+
+        }
+        .faq-input{
+            width: 0;
+            height: 0;
+            appearance: none;
+            position: absolute;
+        }
+        .faq-input:checked ~ .faq-title{
+            background-color: #F1B771;
+        }
+        .faq-input:checked ~ .faq-text{
+            display: block;
+        }
+       
+        p{
+            margin: 0 0 5px;
+        }
+        a:hover{
+            opacity: 0.7;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <div class="shapka"></div>
+    <div class="header">
+        <div style=" font-size: 50px; font-family: 'Rubik', sans-serif; "><b>Study Space</b></div>
+    </div>
+
+    <div class="nb">             
+                <div><a href="/fff/new1.html">Home</a></div>
+                <div><a href="/fff/new2.html">About us</a></div>
+                <div><a href="/fff/new3.html" class="">Contacts</a></div>                             
+    </div>
+
+    <div class="inf" style="font-size: 30px;"><b>"STUDY SPACE" Білім беру орталығы</b>
+        <div style="font-size: 20px;">ҰБТ, НЗМ, БИЛ-ға дайындық саласында </div> 
+        <div style="font-size: 20px;">20 жылдық тәжірибесі мен</div>
+        <div style="font-size: 20px;">21 қалада ең үздік, 28 орталық!</div>
+    </div>
+    <br>
+
+    <div class="cent">
+        <div class="pl cent">1) Оффлайн және онлайн білім беру
+            <div>2) Бір топта тек 15 оқушыға дейін</div>
+            <div>3) Әрдайым куратордың бақылауы</div>
+            <div>4) Тәжірибесі бар білікті ұстаздар</div>
+        </div>     
+    </div>
+
+    <div class="inf" style="font-size: 30px;"><b>Біздің курстарымыз</b></div>
+
+    
+    <div class="wrapper">
+        <div style="margin-top: 70px; padding-left: 50px; padding-right: 50px"> 
+            <a href="" style="color: black; text-decoration: none;"><div class="re">ҰБТ-ға <b><span style="color: pink;">OFFLINE</span></b> дайындық
+                <div style="padding-left: 40px;"><img src="https://thumb.tildacdn.com/tild3263-3433-4031-a263-663138366636/-/resize/220x/-/format/webp/card2.png" alt=""></div></div>
+            </a>
+        </div>
+        <div style="margin-top: 70px; padding-left: 50px; padding-right: 50px"> 
+            <a href="" style="color: black; text-decoration: none ;"><div class="re">ҰБТ-ға <b> <span style="color: pink;">ONLINE </span></b> дайындық
+                <div style="padding-left: 40px;"><img src="https://thumb.tildacdn.com/tild6330-3139-4266-b032-663135646165/-/resize/380x/-/format/webp/tp238-pf-s73-05-mock.png" alt=""></div></div>
+            </a>
+            </div>
+            <div style="margin-top: 70px; padding-left: 50px;padding-right: 50px"> 
+                <a href="" style="color: black; text-decoration: none;"><div class="re">НЗМ, БИЛ-ға дайындық
+                    <div style="padding-left: 40px;"><img src="https://thumb.tildacdn.com/tild3638-3130-4031-b164-653439333535/-/resize/280x/-/format/webp/card4.png" alt=""></div></div>
+                </a>
+            </div>
+            <div style="margin-top: 70px; padding-left: 50px;padding-right: 50px"> 
+                <a href="" style="color: black; text-decoration: none;"><div class="re">7, 8, 9 сыныптарға дайындық
+                    <div style="padding-left: 40px;"><img src="https://thumb.tildacdn.com/tild6434-6334-4436-a139-393062396666/-/resize/220x/-/format/webp/card1.png" alt=""></div></div>
+                </a>
+            </div>
+            <div style="margin-top: 70px; padding-left: 50px;padding-right: 50px"> 
+                <a href="" style="color: black; text-decoration: none;"><div class="re">4, 5 сынықтарға дайындық
+                    <div style="padding-left: 40px;"><img src="https://thumb.tildacdn.com/tild3033-3664-4534-a632-626265653631/-/resize/220x/-/format/webp/card5.png" alt=""></div></div>
+                </a>
+            </div>
+        </div>
+        </div>
+
+
+        <div style="padding: 50px; font-size:40px"><b>Жиі қойылатын сұрақтар</b></div>
+
+
+
+
+
+
+        <div class="faq">
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq1">
+                <label class="faq-title" for="faq1" style="padding: 15px;"><b>"STUDY SPACE" Білім беру орталығында ҰБТ-ға дайындықты қашаннан бастау керек?</b></label> 
+                <div class="faq-text">
+                    <p style="font-size: 20px; padding: 15px;">Алдын-ала 10-сыныптан бастап дайындалуға кеңес береміз.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq2">
+                <label class="faq-title" for="faq2" style="padding: 15px;"><b>Репетитормен жеке дайындалу, топпен дайындалғаннан артық емес пе?</b></label>
+                <div class="faq-text">
+                    <p style="padding: 15px; font-size: 20px;">Жоқ. Кіші топтарда білім беру оқытушыға әр шәкіртке жетерлік назар аударуға мүмкіндік береді. Топта жұмыс істеу, әр оқушыға ерекше атмосфера сыйлай отырып, қызу жұмыс істеу арқылы, ой алмасып білім алуға көмектесетін тиімді жақтары бар екенін ұмытпаңыз. Басқа оқушының қойған сұрақтары мен жіберген қателерін түсіндіру барысында екінші оқушы, сол тақырыпты яки тапсырманы одан әрі түсініп, нақтылай түседі.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq3">
+                <label class="faq-title" for="faq3" style="padding: 15px;"><b>Сіздер тек міндетті пәндерге дайындайсыздар ма?</b></label>
+                <div class="faq-text">
+                    <p style="padding: 15px; font-size: 20px;">Міндетті және таңдау пәндеріне дайындаймыз.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq4">
+                <label class="faq-title" for="faq4" style="padding: 15px;"><b>Неге ҰБТ-ға өздігінен дайындалуға болмайды?</b></label>
+                <div class="faq-text">
+                    <p style="padding: 15px; font-size: 20px;">Болады, бірақ нәтиже сіз күткендей болмайды. Білікті мамандар тек тақырыпты түсіндіріп қана қоймай, оқушының жібірген қателерімен жұмыс жасап, оларды енді жібермеуі үшін жұмыстанады. Құпияларымен бөлісіп, мотивация береді.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq5">
+                <label class="faq-title" for="faq5" style="padding: 15px;"><b>Білім сапасы мен экзаменге дайындалудағы білім деңгейін қалай тексересіз?</b></label>
+                <div class="faq-text">
+                    <p style="padding: 15px; font-size: 20px;">"STUSY SPACE" Білім беру орталығымызда оқушылар әр ай сайын сынақ тестілеуін тапсырып отырады. Ұстаздар оқушылардың білім деңгейін анықтап,бағдарлама арқылы бақылап отырады.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item" >
+                <input class="faq-input" type="checkbox" id="faq6">
+                <label class="faq-title" for="faq6" style="padding: 15px;"><b>Репетитормен жеке дайындалу, топпен дайындалғаннан артық емес пе?</b></label>
+                <div class="faq-text">
+                    <p style="padding: 15px; font-size: 20px;">Жоқ. Кіші топтарда білім беру оқытушыға әр шәкіртке жетерлік назар аударуға мүмкіндік береді. Топта жұмыс істеу, әр оқушыға ерекше атмосфера сыйлай отырып, қызу жұмыс істеу арқылы, ой алмасып білім алуға көмектесетін тиімді жақтары бар екенін ұмытпаңыз. Басқа оқушының қойған сұрақтары мен жіберген қателерін түсіндіру барысында екінші оқушы, сол тақырыпты яки тапсырманы одан әрі түсініп, нақтылай түседі.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
