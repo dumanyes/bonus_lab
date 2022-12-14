@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            
+            background: #1d2b3a;
+        }
+        .add-user{
+            background: #1d2b3a;
+            display: flex;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #00dfc4;
+            border-radius: 20px;
+            width: 30%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .inputBox{
+            position: relative;
+            width: 250px;
+        }
+        .inputBox input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: #1d2b3a;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            outline: none;
+            color:  white;
+            font-size: 1em;
+            transition: 0.5s;
+        }
+        .inputBox span{
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.25);
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        .inputBox input:valid~span, .inputBox input:focus~span{
+            color: #00dfc4;
+            transform: translateX(10px) translateY(-7px);
+            font-size: 0.65em;
+            padding: 0 10px;
+            background: #1d2b3a;
+            border-left: 1px solid #00dfc4;
+            border-right: 1px solid #00dfc4;
+            letter-spacing: 0.2em;
+        }
+        .inputBox input:valid, .inputBox input:focus{
+            border: 1px solid #00dfc4
+        }
+        .inputBox:nth-child(1) input:valid~span, .inputBox:nth-child(2) input:focus~span{
+            background: #00dfc4;
+            color: #1d2b3a;
+        }
+        .users{
+            background: #1d2b3a;
+            display: block;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #00dfc4;
+            border-radius: 20px;
+            width: 63%;
+            height: 500px;
+            align-items: center;
+            color: #00dfc4;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.8em;
+            word-wrap: break-word;
+            overflow-x: scroll;
+            
+            
+        }
+        button{
+            width: 60px;
+            height: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background: #00dfc4;
+            color: #1d2b3a;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .mp{
+            margin: 20px;
+        }
+        .smedia{
+        position: absolute;
+        top: 750px;
+        right: 20px;
+        
+        border-radius: 100%;
+        width: 50px;
+        height: 3.4722222222222223vw;
+        transition: 0.8s;
+        
+      }
+      a:hover{
+        opacity: 0.8;
+      }
+      .change{
+        width: 150px;
+        height: 10.41vw;
+      }
+        
+        
+
+        
+       
+
+        
+        
+        
+    </style>
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="row">
+            <span class="add-user col-5">
+                <div class="inputBox">
+                    <input type="text" id="names" required="required">
+                    <span>Username</span>
+                </div>
+                <div>
+                    <button id="button" onclick="add_element_to_array()">Add</button>
+                </div>
+            </span>
+            <div class="users col-8">
+                <div class="mp">
+                    <div id="Result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="#" class="" id="ph"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" class="smedia" alt="whatsapp"></a>
+
+
+    <script>
+        var x = 0;
+        var array = Array();
+
+        function add_element_to_array()
+        {
+        array[x] = document.getElementById("names").value;
+        x++;
+        document.getElementById("names").value = "";
+
+
+
+
+        var e = "";   
+            
+        for (var y=0; y<array.length; y++)
+        {
+            e +=array[y]+"  ";
+        }
+        document.getElementById("Result").innerHTML = e;
+        }
+        
+
+        window.addEventListener('scroll',()=>{
+        console.log($(window).scrollTop())
+        if($(window).scrollTop()>20){
+          document.getElementsByClassName('smedia')[0].classList.add('change')
+        }
+        if(document.documentElement.scrollTop < 20){
+          document.getElementsByClassName('smedia')[0].classList.remove('change')
+        }
+      })
+
+
+        
+
+        
+    </script>
+</body>
+</html>
